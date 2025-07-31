@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        font-family: sans-serif;
+      }
+      div {
+        display: inline-block;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+      }
+      video {
+        border: 1px solid gray;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="./snake.html">
+        <video src="./snake.mp4" loop muted width="300"></video>
+      </a>
+      <a href="https://github.com/kapsi1/snake">code</a>
+    </div>
+    <div>
+      <a href="./tetris.html">
+        <video src="./tetris.mp4" loop muted width="300"></video>
+      </a>
+      <a href="https://github.com/kapsi1/tetris">code</a>
+    </div>
+    <div>
+      <a href="./pacman/index.html">
+        <video src="./pacman.mp4" loop muted width="300"></video>
+      </a>
+      <a href="https://github.com/kapsi1/pacman">code</a>
+    </div>
+    <script>
+      const videos = document.querySelectorAll("video");
+
+      videos.forEach((video) => {
+        video.addEventListener("mouseenter", () => {
+          video.play();
+        });
+
+        video.addEventListener("mouseleave", () => {
+          video.pause();
+        });
+      });
+    </script>
+  </body>
+</html>

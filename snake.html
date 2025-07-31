@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Snake</title>
+    <style>
+      body {
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      #gameCanvas {
+        border: 1px solid #3b3b3b;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      #pause {
+        color: #fff;
+        align-items: center;
+        width: 600px;
+        height: 600px;
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        & div {
+          text-align: center;
+          background: gray;
+          width: 100%;
+          height: 50px;
+          font-family: sans-serif;
+          font-size: 30px;
+          line-height: 50px;
+        }
+      }
+      #debug {
+        color: #a3a3a3;
+        font-family: monospace;
+      }
+      .score {
+        color: #d1d1d1;
+        margin-left: 10px;
+        font-family: sans-serif;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="pause"><div>PAUSED</div></div>
+    <script type="module" src="/snake.js"></script>
+    <div class="score" id="score">Score: <span>0</span></div>
+    <div class="score" id="high-score">High score: <span>0</span></div>
+    <pre id="debug"></pre>
+  </body>
+</html>
