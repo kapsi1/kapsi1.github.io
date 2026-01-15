@@ -4,13 +4,13 @@
       body {
         background-color: black;
         font-family: sans-serif;
+        color: white;
       }
       div {
         display: inline-block;
       }
-      a {
+      a.github {
         display: block;
-        text-decoration: none;
         color: white;
         text-align: center;
       }
@@ -21,24 +21,33 @@
     </style>
   </head>
   <body>
-    <h2>Some classic games I coded for fun</h2>
+    <h2>My name is Kamil Kapsiak, I'm a software engineer.</h2>
+    <a href="./Kamil Kapsiak - CV.pdf" target="_blank" rel="noopener noreferrer">Download my CV</a>
+    <h2>Snack - a Slack clone:</h2>
     <div>
-      <a href="./snake.html">
+      <a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">
+        <img src="./snack.png" alt="Snack" width="300">
+      </a>
+      <a class="github" href="https://github.com/kapsi1/Srack" target="_blank" rel="noopener noreferrer">Github</a>
+    </div>
+    <h2>Some classic games I coded for fun:</h2>
+    <div>
+      <a href="./snake.html" target="_blank" rel="noopener noreferrer">
         <video src="./snake.mp4" loop muted width="300"></video>
       </a>
-      <a href="https://github.com/kapsi1/snake">code</a>
+      <a class="github" href="https://github.com/kapsi1/snake" target="_blank" rel="noopener noreferrer">Github</a>
     </div>
     <div>
-      <a href="./tetris.html">
+      <a href="./tetris.html" target="_blank" rel="noopener noreferrer">
         <video src="./tetris.mp4" loop muted width="300"></video>
       </a>
-      <a href="https://github.com/kapsi1/tetris">code</a>
+      <a class="github" href="https://github.com/kapsi1/tetris" target="_blank" rel="noopener noreferrer">Github</a>
     </div>
     <div>
-      <a href="./pacman/index.html">
+      <a href="./pacman/index.html" target="_blank" rel="noopener noreferrer">
         <video src="./pacman.mp4" loop muted width="300"></video>
       </a>
-      <a href="https://github.com/kapsi1/pacman">code</a>
+      <a class="github" href="https://github.com/kapsi1/pacman" target="_blank" rel="noopener noreferrer">Github</a>
     </div>
     <script>
       const videos = document.querySelectorAll("video");
