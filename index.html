@@ -20,7 +20,7 @@
         <h1>Kamil Kapsiak</h1>
 
         <p class="subtitle">
-          Software Engineer · Full-stack · Real-time systems
+          Full-stack Software Engineer
         </p>
         <p class="stack">
           TypeScript · Node.js · React
@@ -57,85 +57,160 @@
     </header>
 
 
-    <!-- Projects Tile - Top Right -->
-    <div class="tile tile--projects">
-      <h2><a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">Snack - a Slack clone</a> |
-        <a class="github" href="https://github.com/kapsi1/Srack" target="_blank" rel="noopener noreferrer">Github</a>
-      </h2>
-      <div class="tile-content">
-        <div class="project-item">
-          <a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">
-            <img class="border" src="./snack2.png" alt="Snack">
-          </a>
-        </div>
-        <div class="roboto-mono list">
-          <h2>Features:</h2>
-          <ul>
-            <li>Real-time messaging</li>
-            <li>Direct messaging</li>
-            <li>File uploads</li>
-            <li>Audio and video calls</li>
-          </ul>
-        </div>
-        <div class="roboto-mono list">
-          <h2>Technologies:</h2>
-          <ul>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Socket.io</li>
-            <li>WebRTC</li>
-            <li>Tailwind CSS</li>
-            <li>PostgreSQL</li>
-          </ul>
-        </div>
+    <!-- Right column - bento container -->
+    <div class="right-column">
+
+      <div class="right-column-header">
+        <h2>My Projects</h2>
       </div>
-    </div>
 
-    <!-- Games Tile - Bottom Right -->
-    <div class="tile tile--games">
-      <h2>Some classic games I coded for fun</h2>
-      <div class="games-grid">
-        <div class="game-item">
+      <!-- Scrollable projects area -->
+      <div class="projects-scroll">
 
-          <h3><a href="./snake.html" target="_blank" rel="noopener noreferrer">Snake</a> | <a class="github"
-              href="https://github.com/kapsi1/snake" target="_blank" rel="noopener noreferrer">Github</a></h3>
+        <!-- Projects Tile -->
+        <div class="tile tile--projects">
+          <h2><a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">Snack - a Slack clone</a> |
+            <a class="github" href="https://github.com/kapsi1/Srack" target="_blank" rel="noopener noreferrer">Github</a>
+          </h2>
+          <div class="tile-content">
+            <div class="project-item">
+              <a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">
+                <img class="border" src="./snack2.png" alt="Snack">
+              </a>
+            </div>
+            <div class="roboto-mono list">
+              <h2>Features:</h2>
+              <ul>
+                <li>Real-time messaging</li>
+                <li>Direct messaging</li>
+                <li>File uploads</li>
+                <li>Audio and video calls</li>
+              </ul>
+            </div>
+            <div class="roboto-mono list">
+              <h2>Technologies:</h2>
+              <ul>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Socket.io</li>
+                <li>WebRTC</li>
+                <li>Tailwind CSS</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-          <a href="./snake.html" target="_blank" rel="noopener noreferrer">
-            <video class="border" loop muted poster="./snake.jpg">
-              <source src="./snake.mp4" type="video/mp4">
-            </video>
-          </a>
+        <!-- Games Tile -->
+        <div class="tile tile--games">
+          <h2>Some classic games I coded for fun</h2>
+          <div class="games-grid">
+            <div class="game-item">
+              <h3><a href="./snake.html" target="_blank" rel="noopener noreferrer">Snake</a> | <a class="github"
+                  href="https://github.com/kapsi1/snake" target="_blank" rel="noopener noreferrer">Github</a></h3>
+              <a href="./snake.html" target="_blank" rel="noopener noreferrer">
+                <video class="border" loop muted poster="./snake.jpg">
+                  <source src="./snake.mp4" type="video/mp4">
+                </video>
+              </a>
+            </div>
+            <div class="game-item">
+              <h3><a href="./tetris.html" target="_blank" rel="noopener noreferrer">Tetris</a> | <a class="github"
+                  href="https://github.com/kapsi1/tetris" target="_blank" rel="noopener noreferrer">Github</a></h3>
+              <a href="./tetris.html" target="_blank" rel="noopener noreferrer">
+                <video class="border" loop muted poster="./tetris.jpg">
+                  <source src="./tetris.mp4" type="video/mp4">
+                </video>
+              </a>
+            </div>
+            <div class="game-item">
+              <h3><a href="./pacman/index.html" target="_blank" rel="noopener noreferrer">Pacman</a> | <a class="github"
+                  href="https://github.com/kapsi1/pacman" target="_blank" rel="noopener noreferrer">Github</a></h3>
+              <a href="./pacman/index.html" target="_blank" rel="noopener noreferrer">
+                <video class="border" loop muted poster="./pacman.jpg">
+                  <source src="./pacman.mp4" type="video/mp4">
+                </video>
+              </a>
+            </div>
+            <div class="roboto-mono list">
+              <h2>Technologies:</h2>
+              <ul>
+                <li>HTML Canvas</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <!-- Chrome Extensions Tile -->
+        <div class="tile tile--extensions">
+          <h2>Chrome Extensions</h2>
+          <div class="extensions-grid">
+            <div class="extension-item">
+              <h3>Facebook Google Calendar Event Exporter</h3>
+              <div class="roboto-mono list">
+                <h2>About:</h2>
+                <ul>
+                  <li>Export Facebook events</li>
+                  <li>One-click to Google Calendar</li>
+                  <li>Automatic date & time parsing</li>
+                </ul>
+              </div>
+            </div>
+            <div class="extension-item">
+              <h3>ChatGPT Back to Last Position</h3>
+              <div class="roboto-mono list">
+                <h2>About:</h2>
+                <ul>
+                  <li>Remembers scroll position</li>
+                  <li>Restores on page reload</li>
+                  <li>Works across sessions</li>
+                </ul>
+              </div>
+            </div>
+            <div class="extension-item">
+              <h3>ChatGPT Bookmark Manager</h3>
+              <div class="roboto-mono list">
+                <h2>About:</h2>
+                <ul>
+                  <li>Bookmark any chat message</li>
+                  <li>Quick navigation sidebar</li>
+                  <li>Persistent across sessions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="game-item">
-          <h3><a href="./tetris.html" target="_blank" rel="noopener noreferrer">Tetris</a> | <a class="github"
-              href="https://github.com/kapsi1/tetris" target="_blank" rel="noopener noreferrer">Github</a></h3>
-          <a href="./tetris.html" target="_blank" rel="noopener noreferrer">
-            <video class="border" loop muted poster="./tetris.jpg">
-              <source src="./tetris.mp4" type="video/mp4">
-            </video>
-          </a>
+
+        <!-- SubTracker Tile -->
+        <div class="tile tile--subtracker">
+          <h2>SubTracker</h2>
+          <div class="tile-content">
+            <div class="roboto-mono list">
+              <h2>Features:</h2>
+              <ul>
+                <li>Track all subscriptions</li>
+                <li>Billing cycle reminders</li>
+                <li>Monthly spend overview</li>
+                <li>Category breakdown</li>
+              </ul>
+            </div>
+            <div class="roboto-mono list">
+              <h2>Technologies:</h2>
+              <ul>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="game-item">
-          <h3><a href="./pacman/index.html" target="_blank" rel="noopener noreferrer">Pacman</a> | <a class="github"
-              href="https://github.com/kapsi1/pacman" target="_blank" rel="noopener noreferrer">Github</a></h3>
-          <a href="./pacman/index.html" target="_blank" rel="noopener noreferrer">
-            <video class="border" loop muted poster="./pacman.jpg">
-              <source src="./pacman.mp4" type="video/mp4">
-            </video>
-          </a>
-        </div>
-        <div class="roboto-mono list">
-          <h2>Technologies:</h2>
-          <ul>
-            <li>HTML Canvas</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+
+      </div><!-- /projects-scroll -->
+
+    </div><!-- /right-column -->
+  </div><!-- /bento-grid -->
   <script>
     const videos = document.querySelectorAll("video");
 
