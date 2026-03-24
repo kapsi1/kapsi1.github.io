@@ -21,7 +21,7 @@
       <p class="stack">TypeScript · Node.js · React</p>
       <div class="cta-wrapper">
         <a href="/Kamil_Kapsiak_CV.pdf" download class="cv-button">
-          <span class="icon" aria-hidden="true">⬇</span>
+          <img src="./download-icon.svg" alt="Download CV" width="24" height="24" />
           Download CV
         </a>
       </div>
@@ -63,7 +63,51 @@
     <!-- Scrollable projects area -->
     <div class="projects-scroll">
 
-      <!-- Projects Tile -->
+      <!-- SubTracker -->
+      <section>
+        <h2>
+          <a href="https://www.subtracker.cc" target="_blank" rel="noopener noreferrer">SubTracker - subscription
+            payment manager</a>
+          |
+          <a class="github" href="https://github.com/kapsi1/subscription-tracker" target="_blank"
+            rel="noopener noreferrer">Github</a>
+        </h2>
+        <div class="tile-content">
+          <div class="project-item">
+            <a href="https://www.subtracker.cc" target="_blank" rel="noopener noreferrer">
+              <img class="border" src="./subtracker.png" alt="SubTracker">
+            </a>
+          </div>
+          <div class="list">
+            <h2>Features:</h2>
+            <ul>
+              <li>Interactive Dashboard</li>
+              <li>Smart Subscription Management</li>
+              <li>Intelligent Notifications</li>
+              <li>Google Calendar Integration</li>
+              <li>Budgeting & Alerts</li>
+              <li>Multi-language Support</li>
+              <li>PWA & Mobile Ready</li>
+              <li>Secure Authentication</li>
+            </ul>
+          </div>
+          <div class="list">
+            <h2>Technologies:</h2>
+            <ul>
+              <li>Next.js (Frontend)</li>
+              <li>NestJS (Backend)</li>
+              <li>PostgreSQL & Prisma ORM (Database)</li>
+              <li>Redis & BullMQ (Task Queue)</li>
+              <li>Tailwind CSS</li>
+              <li>TanStack Query</li>
+              <li>Playwright (E2E Testing)</li>
+              <li>Docker & Docker Compose</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Snack -->
       <section>
         <h2>
           <a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">Snack - chat application</a>
@@ -99,46 +143,7 @@
         </div>
       </section>
 
-      <!-- SubTracker Tile -->
-      <section>
-        <h2>
-          <a href="https://www.subtracker.cc" target="_blank" rel="noopener noreferrer">SubTracker - subscription
-            payment manager</a>
-          |
-          <a class="github" href="https://github.com/kapsi1/subscription-tracker" target="_blank"
-            rel="noopener noreferrer">Github</a>
-        </h2>
-        <div class="tile-content">
-          <div class="list">
-            <h2>Features:</h2>
-            <ul>
-              <li>Interactive Dashboard</li>
-              <li>Smart Subscription Management</li>
-              <li>Intelligent Notifications</li>
-              <li>Google Calendar Integration</li>
-              <li>Budgeting & Alerts</li>
-              <li>Multi-language Support</li>
-              <li>PWA & Mobile Ready</li>
-              <li>Secure Authentication</li>
-            </ul>
-          </div>
-          <div class="list">
-            <h2>Technologies:</h2>
-            <ul>
-              <li>Next.js (Frontend)</li>
-              <li>NestJS (Backend)</li>
-              <li>PostgreSQL & Prisma ORM (Database)</li>
-              <li>Redis & BullMQ (Task Queue)</li>
-              <li>Tailwind CSS</li>
-              <li>TanStack Query</li>
-              <li>Playwright (E2E Testing)</li>
-              <li>Docker & Docker Compose</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Browser Extensions Tile -->
+      <!-- Browser Extensions -->
       <section>
         <h2>Browser Extensions</h2>
         <div class="extensions-grid">
@@ -188,7 +193,7 @@
         </div>
       </section>
 
-      <!-- Games Tile -->
+      <!-- Games -->
       <section>
         <h2>Some classic games I coded for fun</h2>
         <div class="games-grid">
@@ -235,8 +240,8 @@
           </div>
         </div>
       </section>
-    </div><!-- /projects-scroll -->
-  </main><!-- /right-column -->
+    </div>
+  </main>
   <script>
     const videos = document.querySelectorAll("video");
 
