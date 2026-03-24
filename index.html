@@ -10,18 +10,35 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
+  <script>
+    (() => {
+      const savedLang = localStorage.getItem('language') || 'en';
+      document.documentElement.lang = savedLang;
+      if (savedLang === 'pl') {
+        const style = document.createElement('style');
+        style.id = 'early-hide';
+        style.innerHTML = 'body { visibility: hidden !important; }';
+        document.head.appendChild(style);
+      }
+    })();
+  </script>
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
   <header class="hero">
+    <button id="lang-toggle" class="lang-button" aria-label="Toggle language">
+      <img class="flag-icon" src="" alt="" />
+      <span></span>
+    </button>
     <div class="hero-content animate-in">
       <h1>Kamil Kapsiak</h1>
-      <p class="subtitle">Full-stack Software Engineer</p>
+      <p class="subtitle" data-i18n="subtitle">Full-stack Software Engineer</p>
       <p class="stack">TypeScript · Node.js · React</p>
       <div class="cta-wrapper">
         <a href="/Kamil_Kapsiak_CV.pdf" download class="cv-button">
-          <img src="./download-icon.svg" alt="Download CV" width="24" height="24" />
-          Download CV
+          <img src="./download-icon.svg" alt="" width="24" height="24" />
+          <span data-i18n="download_cv">Download CV</span>
         </a>
       </div>
 
@@ -51,7 +68,8 @@
   <main class="right-column">
     <header class="right-column-header">
       <h2>
-        My Projects | <a class="github" href="https://github.com/kapsi1" target="_blank" rel="noopener noreferrer">My
+        <span data-i18n="my_projects">My Projects</span> | <a class="github" href="https://github.com/kapsi1"
+          target="_blank" rel="noopener noreferrer" data-i18n="my_github">My
           Github</a>
       </h2>
     </header>
@@ -59,7 +77,8 @@
       <!-- SubTracker -->
       <section>
         <h2>
-          <a href="https://www.subtracker.cc" target="_blank" rel="noopener noreferrer">SubTracker - subscription
+          <a href="https://www.subtracker.cc" target="_blank" rel="noopener noreferrer"
+            data-i18n="subtracker_title">SubTracker - subscription
             payment manager</a>
           |
           <a class="github" href="https://github.com/kapsi1/subscription-tracker" target="_blank"
@@ -72,20 +91,20 @@
             </a>
           </div>
           <div class="list">
-            <h2>Features:</h2>
+            <h2 data-i18n="features">Features:</h2>
             <ul>
-              <li>Interactive Dashboard</li>
-              <li>Smart Subscription Management</li>
-              <li>Intelligent Notifications</li>
-              <li>Google Calendar Integration</li>
-              <li>Budgeting & Alerts</li>
-              <li>Multi-language Support</li>
-              <li>PWA & Mobile Ready</li>
-              <li>Secure Authentication</li>
+              <li data-i18n="subtracker_f1">Interactive Dashboard</li>
+              <li data-i18n="subtracker_f2">Smart Subscription Management</li>
+              <li data-i18n="subtracker_f3">Intelligent Notifications</li>
+              <li data-i18n="subtracker_f4">Google Calendar Integration</li>
+              <li data-i18n="subtracker_f5">Budgeting & Alerts</li>
+              <li data-i18n="subtracker_f6">Multi-language Support</li>
+              <li data-i18n="subtracker_f7">PWA & Mobile Ready</li>
+              <li data-i18n="subtracker_f8">Secure Authentication</li>
             </ul>
           </div>
           <div class="list">
-            <h2>Technologies:</h2>
+            <h2 data-i18n="technologies">Technologies:</h2>
             <ul>
               <li>Next.js (Frontend)</li>
               <li>NestJS (Backend)</li>
@@ -102,7 +121,8 @@
       <!-- Snack -->
       <section>
         <h2>
-          <a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">Snack - chat application</a>
+          <a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="snack_title">Snack
+            - chat application</a>
           |
           <a class="github" href="https://github.com/kapsi1/Srack" target="_blank" rel="noopener noreferrer">Github</a>
         </h2>
@@ -113,16 +133,16 @@
             </a>
           </div>
           <div class="list">
-            <h2>Features:</h2>
+            <h2 data-i18n="features">Features:</h2>
             <ul>
-              <li>Real-time messaging</li>
-              <li>Direct messaging</li>
-              <li>File uploads</li>
-              <li>Audio and video calls</li>
+              <li data-i18n="snack_f1">Real-time messaging</li>
+              <li data-i18n="snack_f2">Direct messaging</li>
+              <li data-i18n="snack_f3">File uploads</li>
+              <li data-i18n="snack_f4">Audio and video calls</li>
             </ul>
           </div>
           <div class="list">
-            <h2>Technologies:</h2>
+            <h2 data-i18n="technologies">Technologies:</h2>
             <ul>
               <li>React</li>
               <li>Node.js</li>
@@ -136,48 +156,51 @@
       </section>
       <!-- Browser Extensions -->
       <section>
-        <h2>Browser Extensions</h2>
+        <h2 data-i18n="browser_extensions">Browser Extensions</h2>
         <div class="extensions-grid">
           <article class="extension-item">
             <h3>
               <a href="https://chromewebstore.google.com/detail/facebook-to-google-calend/mideojkklbmcdnhmacmjiecpnanamedp"
-                target="_blank" rel="noopener noreferrer">Facebook to Google Calendar Exporter</a>
+                target="_blank" rel="noopener noreferrer" data-i18n="fb_cal_title">Facebook to Google Calendar
+                Exporter</a>
               <br />
               <a class="github" href="https://github.com/kapsi1/facebook-google-calendar-event-exporter" target="_blank"
                 rel="noopener noreferrer">Github</a>
             </h3>
             <div class="list">
               <ul>
-                <li>One-click export of Facebook events to Google Calendar</li>
+                <li data-i18n="fb_cal_desc">One-click export of Facebook events to Google Calendar</li>
               </ul>
             </div>
           </article>
           <article class="extension-item">
             <h3>
               <a href="https://chromewebstore.google.com/detail/chatgpt-–-back-to-last-po/npohdlibeffgfmaiojflcdhpopmglcck"
-                target="_blank" rel="noopener noreferrer">ChatGPT - Back to Last Position</a>
+                target="_blank" rel="noopener noreferrer" data-i18n="chatgpt_back_title">ChatGPT - Back to Last
+                Position</a>
               <br />
               <a class="github" href="https://github.com/kapsi1/chatgpt-back-to-last-position-button" target="_blank"
                 rel="noopener noreferrer">Github</a>
             </h3>
             <div class="list">
               <ul>
-                <li>If you type a message to ChatGPT, it scrolls the page to the bottom and you lose your reading
+                <li data-i18n="chatgpt_back_desc1">If you type a message to ChatGPT, it scrolls the page to the bottom
+                  and you lose your reading
                   position</li>
-                <li>This extension adds a button to go back to that position</li>
+                <li data-i18n="chatgpt_back_desc2">This extension adds a button to go back to that position</li>
               </ul>
             </div>
           </article>
           <article class="extension-item">
             <h3>
-              ChatGPT Bookmark Manager
+              <span data-i18n="chatgpt_bookmark_title">ChatGPT Bookmark Manager</span>
               <br />
               <a class="github" href="https://github.com/kapsi1/chatgpt-bookmark-manager" target="_blank"
                 rel="noopener noreferrer">Github</a>
             </h3>
             <div class="list">
               <ul>
-                <li>Bookmark chat messages and scroll to them</li>
+                <li data-i18n="chatgpt_bookmark_desc">Bookmark chat messages and scroll to them</li>
               </ul>
             </div>
           </article>
@@ -185,7 +208,7 @@
       </section>
       <!-- Games -->
       <section>
-        <h2>Some classic games I coded for fun</h2>
+        <h2 data-i18n="games_title">Some classic games I coded for fun</h2>
         <div class="games-grid">
           <article class="game-item">
             <h3>
@@ -221,7 +244,7 @@
             </a>
           </article>
           <div class="list">
-            <h2>Technologies:</h2>
+            <h2 data-i18n="technologies">Technologies:</h2>
             <ul>
               <li>HTML Canvas</li>
               <li>CSS</li>
@@ -232,19 +255,6 @@
       </section>
     </div>
   </main>
-  <script>
-    const videos = document.querySelectorAll("video");
-
-    videos.forEach((video) => {
-      video.addEventListener("mouseenter", () => {
-        video.play();
-      });
-
-      video.addEventListener("mouseleave", () => {
-        video.pause();
-      });
-    });
-  </script>
 </body>
 
 </html>
