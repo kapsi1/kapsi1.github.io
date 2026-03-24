@@ -125,6 +125,12 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
   currentLang = currentLang === 'en' ? 'pl' : 'en';
   localStorage.setItem('language', currentLang);
   updateContent();
+  // GA event tracking
+  if (typeof gtag === 'function') {
+    gtag('event', 'language_toggle', {
+      'language': currentLang
+    });
+  }
 });
 
 // Initialize content
