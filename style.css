@@ -49,13 +49,14 @@ body {
 
 /* RIGHT COLUMN - bento tile wrapper */
 .right-column {
+  grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
   min-height: 0;
   background: linear-gradient(145deg, #0f172a 0%, #020617 100%);
   border: 1px solid rgba(59, 130, 246, 0.12);
   border-radius: 16px;
-  padding: 1.5rem 2rem 1rem;
+  padding: 1rem 2rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -91,26 +92,14 @@ body {
   gap: 1rem;
   scrollbar-width: thin;
   scrollbar-color: rgba(59, 130, 246, 0.3) transparent;
-
-  &::-webkit-scrollbar {
-    width: 4px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: rgba(59, 130, 246, 0.3);
-    border-radius: 2px;
-  }
+  padding-right: 0.75rem;
 
   @media (max-width: 1024px) {
     overflow-y: visible;
   }
 }
 
-.tile {
+section {
   background: linear-gradient(145deg, #0f172a 0%, #020617 100%);
   border: 1px solid rgba(59, 130, 246, 0.12);
   border-radius: 16px;
@@ -137,34 +126,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  /* Projects tile - top right */
-  &--projects {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 4rem;
-  }
-
-  /* Games tile */
-  &--games {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
-  }
-
-  /* Chrome Extensions tile */
-  &--extensions {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
-  }
-
-  /* SubTracker tile */
-  &--subtracker {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
   }
 
   h2 {
@@ -523,6 +484,3 @@ h1 {
     }
   }
 }
-
-
-
