@@ -278,31 +278,31 @@ body {
       }
 
       section {
-        padding: 1rem 2rem;
+        padding: 1.5rem 2rem;
         flex-shrink: 0;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           padding: 1.5rem;
         }
 
         h2 {
           font-size: 1.25rem;
           font-weight: 600;
-          margin-bottom: 1rem;
+          margin-bottom: 1.5rem;
         }
 
         h3 {
           font-size: 1rem;
           font-weight: 600;
           margin-bottom: 0.5rem;
-          text-align: center;
+          text-align: left;
         }
 
         .list {
-          padding-left: 1.25rem;
+          padding-left: 0;
 
           ul {
-            padding-left: 0.8rem;
+            padding-left: 1rem;
           }
 
           li {
@@ -323,38 +323,70 @@ body {
               font-size: 1.1rem;
             }
           }
-
-          @media (max-width: 768px) {
-            flex: 1;
-            min-width: 140px;
-            padding-left: 0;
-          }
         }
 
-        .tile-content {
-          display: flex;
-          gap: 0.5rem;
-          flex: 1;
-          align-items: flex-start;
-
-          @media (min-width: 1024px) {
+        &.app {
+          .tile-content {
             display: grid;
-            grid-template-columns: 1.2fr 1fr 1fr;
             gap: 2rem;
-            align-items: start;
 
-            .list {
-              padding-left: 0;
+            /* LG and MD: 3 columns */
+            @media (min-width: 768px) {
+              grid-template-columns: 1fr 1fr 1fr;
+
+              .screenshot {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+
+            /* SM to MD: screenshot row, lists 2 columns */
+            @media (min-width: 480px) and (max-width: 767px) {
+              grid-template-columns: 1fr 1fr;
+              grid-template-areas: 
+                "screenshot screenshot"
+                "features technologies";
+              
+              .screenshot {
+                grid-area: screenshot;
+                display: flex;
+                justify-content: center;
+              }
+            }
+
+            /* SM: Stacked */
+            @media (max-width: 479px) {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
             }
           }
 
-          @media (max-width: 768px) {
-            flex-wrap: wrap;
-            gap: 1.5rem 1rem;
+          .screenshot img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            max-width: 300px;
+            max-height: none;
+            object-fit: contain;
           }
 
-          .screenshot {
-            align-self: center;
+          @media (max-width: 767px) {
+            h2 {
+              text-align: center;
+              width: 100%;
+            }
+          }
+        }
+
+        .tile-content:not(.app *) {
+          display: flex;
+          gap: 1.5rem;
+          flex-wrap: wrap;
+
+          @media (max-width: 768px) {
+            flex-direction: column;
           }
         }
 
@@ -384,7 +416,7 @@ body {
 
         .extensions-grid {
           display: flex;
-          gap: 1rem;
+          gap: 1.5rem;
           flex-wrap: wrap;
           flex: 1;
 
@@ -396,14 +428,7 @@ body {
             display: flex;
             flex-direction: column;
             flex: 1;
-            min-width: 180px;
-
-            h3 {
-              font-size: 0.95rem;
-              font-weight: 600;
-              margin-bottom: 0.75rem;
-              text-align: left;
-            }
+            min-width: 250px;
 
             @media (max-width: 768px) {
               width: 100%;
