@@ -28,7 +28,9 @@ const translations = {
     chatgpt_back_desc2: "This extension adds a button to go back to that position",
     chatgpt_bookmark_title: "ChatGPT Bookmark Manager",
     chatgpt_bookmark_desc: "Bookmark chat messages and scroll to them",
-    games_title: "Some classic games I coded for fun"
+    games_title: "Some classic games I coded for fun",
+    meta_title: "Kamil Kapsiak - Software Engineer",
+    meta_description: "Full-stack Software Engineer specializing in TypeScript, Node.js, and React. Portfolio featuring projects like SubTracker and Snack."
   },
   pl: {
     subtitle: "Full-stack Software Engineer",
@@ -59,7 +61,9 @@ const translations = {
     chatgpt_back_desc2: "To rozszerzenie dodaje przycisk powrotu do poprzedniej pozycji",
     chatgpt_bookmark_title: "ChatGPT Bookmark Manager",
     chatgpt_bookmark_desc: "Zapisuj wiadomości i przewijaj do nich",
-    games_title: "Klasyczne gry, które napisałem dla zabawy"
+    games_title: "Klasyczne gry, które napisałem dla zabawy",
+    meta_title: "Kamil Kapsiak - Portfolio | Full-stack Software Engineer",
+    meta_description: "Portfolio Kamila Kapsiaka, Full-stack Software Engineera specjalizującego się w TypeScript, Node.js i React. Zobacz moje projekty: SubTracker i Snack."
   }
 };
 
@@ -84,6 +88,29 @@ function updateContent() {
     toggleBtn.querySelector('span').textContent = currentLang.toUpperCase();
     toggleBtn.querySelector('img').src = flags[currentLang];
     toggleBtn.querySelector('img').alt = currentLang === 'pl' ? 'Polish' : 'English';
+  }
+
+  // Update meta tags for SEO
+  document.title = translations[currentLang].meta_title;
+  const descriptionTag = document.querySelector('meta[name="description"]');
+  if (descriptionTag) {
+    descriptionTag.setAttribute('content', translations[currentLang].meta_description);
+  }
+  const ogTitleTag = document.querySelector('meta[property="og:title"]');
+  if (ogTitleTag) {
+    ogTitleTag.setAttribute('content', translations[currentLang].meta_title);
+  }
+  const ogDescriptionTag = document.querySelector('meta[property="og:description"]');
+  if (ogDescriptionTag) {
+    ogDescriptionTag.setAttribute('content', translations[currentLang].meta_description);
+  }
+  const twitterTitleTag = document.querySelector('meta[name="twitter:title"]');
+  if (twitterTitleTag) {
+    twitterTitleTag.setAttribute('content', translations[currentLang].meta_title);
+  }
+  const twitterDescriptionTag = document.querySelector('meta[name="twitter:description"]');
+  if (twitterDescriptionTag) {
+    twitterDescriptionTag.setAttribute('content', translations[currentLang].meta_description);
   }
 
   // Remove the non-flash style if it exists
