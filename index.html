@@ -17,14 +17,8 @@
   <header class="hero">
     <div class="hero-content animate-in">
       <h1>Kamil Kapsiak</h1>
-
-      <p class="subtitle">
-        Full-stack Software Engineer
-      </p>
-      <p class="stack">
-        TypeScript · Node.js · React
-      </p>
-
+      <p class="subtitle">Full-stack Software Engineer</p>
+      <p class="stack">TypeScript · Node.js · React</p>
       <div class="cta-wrapper">
         <a href="/Kamil_Kapsiak_CV.pdf" download class="cv-button">
           <span class="icon" aria-hidden="true">⬇</span>
@@ -32,7 +26,7 @@
         </a>
       </div>
 
-      <div class="socials">
+      <nav class="socials" aria-label="Social links">
         <a href="https://www.linkedin.com/in/kamil-kapsiak-529a5083/" target="_blank" rel="noopener noreferrer"
           aria-label="LinkedIn profile">
           <!-- LinkedIn -->
@@ -49,7 +43,7 @@
               d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.11 3.29 9.44 7.86 10.97.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.19.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.2-1.5 3.17-1.19 3.17-1.19.64 1.57.24 2.73.12 3.02.74.81 1.18 1.85 1.18 3.11 0 4.42-2.69 5.39-5.25 5.67.42.36.79 1.08.79 2.18v3.23c0 .31.21.67.8.56 4.56-1.53 7.84-5.86 7.84-10.97C23.5 5.74 18.27.5 12 .5z" />
           </svg>
         </a>
-      </div>
+      </nav>
 
 
     </div>
@@ -57,19 +51,23 @@
 
 
   <!-- Right column - bento container -->
-  <div class="right-column">
+  <main class="right-column">
 
-    <div class="right-column-header">
-      <h2>My Projects</h2>
-    </div>
+    <header class="right-column-header">
+      <h2>
+        My Projects | <a class="github" href="https://github.com/kapsi1" target="_blank" rel="noopener noreferrer">My
+          Github</a>
+      </h2>
+    </header>
 
     <!-- Scrollable projects area -->
     <div class="projects-scroll">
 
       <!-- Projects Tile -->
       <section>
-        <h2><a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">Snack - chat
-            application</a> |
+        <h2>
+          <a href="https://snack-six.vercel.app" target="_blank" rel="noopener noreferrer">Snack - chat application</a>
+          |
           <a class="github" href="https://github.com/kapsi1/Srack" target="_blank" rel="noopener noreferrer">Github</a>
         </h2>
         <div class="tile-content">
@@ -103,65 +101,90 @@
 
       <!-- SubTracker Tile -->
       <section>
-        <h2>SubTracker</h2>
+        <h2>
+          <a href="https://www.subtracker.cc" target="_blank" rel="noopener noreferrer">SubTracker - subscription
+            payment manager</a>
+          |
+          <a class="github" href="https://github.com/kapsi1/subscription-tracker" target="_blank"
+            rel="noopener noreferrer">Github</a>
+        </h2>
         <div class="tile-content">
           <div class="list">
             <h2>Features:</h2>
             <ul>
-              <li>Track all subscriptions</li>
-              <li>Billing cycle reminders</li>
-              <li>Monthly spend overview</li>
-              <li>Category breakdown</li>
+              <li>Interactive Dashboard</li>
+              <li>Smart Subscription Management</li>
+              <li>Intelligent Notifications</li>
+              <li>Google Calendar Integration</li>
+              <li>Budgeting & Alerts</li>
+              <li>Multi-language Support</li>
+              <li>PWA & Mobile Ready</li>
+              <li>Secure Authentication</li>
             </ul>
           </div>
           <div class="list">
             <h2>Technologies:</h2>
             <ul>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>PostgreSQL</li>
+              <li>Next.js (Frontend)</li>
+              <li>NestJS (Backend)</li>
+              <li>PostgreSQL & Prisma ORM (Database)</li>
+              <li>Redis & BullMQ (Task Queue)</li>
+              <li>Tailwind CSS</li>
+              <li>TanStack Query</li>
+              <li>Playwright (E2E Testing)</li>
+              <li>Docker & Docker Compose</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Chrome Extensions Tile -->
+      <!-- Browser Extensions Tile -->
       <section>
-        <h2>Chrome Extensions</h2>
+        <h2>Browser Extensions</h2>
         <div class="extensions-grid">
-          <div class="extension-item">
-            <h3>Facebook Google Calendar Event Exporter</h3>
+          <article class="extension-item">
+            <h3>
+              <a href="https://chromewebstore.google.com/detail/facebook-to-google-calend/mideojkklbmcdnhmacmjiecpnanamedp"
+                target="_blank" rel="noopener noreferrer">Facebook to Google Calendar Exporter</a>
+              <br />
+              <a class="github" href="https://github.com/kapsi1/facebook-google-calendar-event-exporter" target="_blank"
+                rel="noopener noreferrer">Github</a>
+            </h3>
             <div class="list">
-              <h2>About:</h2>
               <ul>
-                <li>Export Facebook events</li>
-                <li>One-click to Google Calendar</li>
-                <li>Automatic date & time parsing</li>
+                <li>One-click export of Facebook events to Google Calendar</li>
               </ul>
             </div>
-          </div>
-          <div class="extension-item">
-            <h3>ChatGPT Back to Last Position</h3>
+          </article>
+          <article class="extension-item">
+            <h3>
+              <a href="https://chromewebstore.google.com/detail/chatgpt-–-back-to-last-po/npohdlibeffgfmaiojflcdhpopmglcck"
+                target="_blank" rel="noopener noreferrer">ChatGPT - Back to Last Position</a>
+              <br />
+              <a class="github" href="https://github.com/kapsi1/chatgpt-back-to-last-position-button" target="_blank"
+                rel="noopener noreferrer">Github</a>
+            </h3>
             <div class="list">
-              <h2>About:</h2>
               <ul>
-                <li>Remembers scroll position</li>
-                <li>Restores on page reload</li>
-                <li>Works across sessions</li>
+                <li>If you type a message to ChatGPT, it scrolls the page to the bottom and you lose your reading
+                  position</li>
+                <li>This extension adds a button to go back to that position</li>
               </ul>
             </div>
-          </div>
-          <div class="extension-item">
-            <h3>ChatGPT Bookmark Manager</h3>
+          </article>
+          <article class="extension-item">
+            <h3>
+              ChatGPT Bookmark Manager
+              <br />
+              <a class="github" href="https://github.com/kapsi1/chatgpt-bookmark-manager" target="_blank"
+                rel="noopener noreferrer">Github</a>
+            </h3>
             <div class="list">
-              <h2>About:</h2>
               <ul>
-                <li>Bookmark any chat message</li>
-                <li>Quick navigation sidebar</li>
-                <li>Persistent across sessions</li>
+                <li>Bookmark chat messages and scroll to them</li>
               </ul>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
@@ -169,7 +192,7 @@
       <section>
         <h2>Some classic games I coded for fun</h2>
         <div class="games-grid">
-          <div class="game-item">
+          <article class="game-item">
             <h3>
               <a href="./snake.html" target="_blank" rel="noopener noreferrer">Snake</a> | <a class="github"
                 href="https://github.com/kapsi1/snake" target="_blank" rel="noopener noreferrer">Github</a>
@@ -179,8 +202,8 @@
                 <source src="./snake.mp4" type="video/mp4">
               </video>
             </a>
-          </div>
-          <div class="game-item">
+          </article>
+          <article class="game-item">
             <h3>
               <a href="./tetris.html" target="_blank" rel="noopener noreferrer">Tetris</a> | <a class="github"
                 href="https://github.com/kapsi1/tetris" target="_blank" rel="noopener noreferrer">Github</a>
@@ -190,8 +213,8 @@
                 <source src="./tetris.mp4" type="video/mp4">
               </video>
             </a>
-          </div>
-          <div class="game-item">
+          </article>
+          <article class="game-item">
             <h3>
               <a href="./pacman/index.html" target="_blank" rel="noopener noreferrer">Pacman</a> | <a class="github"
                 href="https://github.com/kapsi1/pacman" target="_blank" rel="noopener noreferrer">Github</a>
@@ -201,19 +224,19 @@
                 <source src="./pacman.mp4" type="video/mp4">
               </video>
             </a>
-          </div>
+          </article>
           <div class="list">
             <h2>Technologies:</h2>
             <ul>
               <li>HTML Canvas</li>
               <li>CSS</li>
-              <li>JavaScript</li>
+              <li>TypeScript</li>
             </ul>
           </div>
         </div>
       </section>
     </div><!-- /projects-scroll -->
-  </div><!-- /right-column -->
+  </main><!-- /right-column -->
   <script>
     const videos = document.querySelectorAll("video");
 
