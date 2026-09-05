@@ -435,6 +435,12 @@ body {
               width: 100%;
             }
           }
+
+          &.colors {
+            p {
+              color: #888888;
+            }
+          }
         }
 
         .tile-content:not(.app *) {
