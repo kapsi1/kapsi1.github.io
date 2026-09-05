@@ -29,6 +29,8 @@ const translations = {
     chatgpt_bookmark_title: "ChatGPT Bookmark Manager",
     chatgpt_bookmark_desc: "Bookmark chat messages and scroll to them",
     games_title: "Some classic games I coded for fun",
+    colors_title: "16,777,216 colors - Color Space Flythrough",
+    colors_desc: "An interactive WebGL2 flythrough of the complete RGB color space, rendered as a 256 × 256 × 256 lattice of colored spheres - one sphere for every one of the 16,777,216 (256³) colors a true-color display can show.",
     meta_title: "Kamil Kapsiak - Software Engineer",
     meta_description: "Full-stack Software Engineer specializing in TypeScript, Node.js, and React. Portfolio featuring projects like SubTracker and Snack."
   },
@@ -62,6 +64,8 @@ const translations = {
     chatgpt_bookmark_title: "ChatGPT Bookmark Manager",
     chatgpt_bookmark_desc: "Zapisuj wiadomości i przewijaj do nich",
     games_title: "Klasyczne gry, które napisałem dla zabawy",
+    colors_title: "16 777 216 kolorów - Przelot przez przestrzeń barw",
+    colors_desc: "Interaktywny przelot WebGL2 przez pełną przestrzeń kolorów RGB/HSL/HSV, wyrenderowaną jako siatka 256 × 256 × 256 kolorowych kul, albo cylinder - jedna kula dla każdego z 16 777 216 (256³) kolorów, jakie może wyświetlić ekran true-color.",
     meta_title: "Kamil Kapsiak - Portfolio | Full-stack Software Engineer",
     meta_description: "Portfolio Kamila Kapsiaka, Full-stack Software Engineera specjalizującego się w TypeScript, Node.js i React. Zobacz moje projekty: SubTracker i Snack."
   }
